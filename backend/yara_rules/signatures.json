@@ -1,0 +1,10 @@
+{
+  "0000000000000000000000000000000000000000000000000000000000000000": {
+    "name": "DEMO_KNOWN_SIGNATURE",
+    "description": "Placeholder signature for testing the signature-match code path; not a real malware hash."
+  },
+  "ead27bfe57e94d2c5cb704c6829648314514edf56a68d9277fc9c5c77a1d5b9b": {
+    "name": "DEMO_YARA_TEST_SIGNATURE",
+    "description": "Harmless bundled test sample used to demonstrate local SHA-256 signature matching."
+  }
+}

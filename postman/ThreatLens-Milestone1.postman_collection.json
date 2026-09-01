@@ -1,0 +1,12 @@
+{
+  "info": {"name":"ThreatLens AI - Milestone 1","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable":[{"key":"baseUrl","value":"http://localhost:8000"},{"key":"token","value":""}],
+  "item":[
+    {"name":"Health","request":{"method":"GET","url":"{{baseUrl}}/health"}},
+    {"name":"Login Analyst","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"email\": \"analyst@threatlens.local\",\n  \"password\": \"Analyst@123\"\n}"},"url":"{{baseUrl}}/api/auth/login"}},
+    {"name":"Me","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/auth/me"}},
+    {"name":"List Users (Admin)","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/users"}},
+    {"name":"YARA Rules","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/users/yara/rules"}},
+    {"name":"Scan History","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{baseUrl}}/api/scans"}}
+  ]
+}

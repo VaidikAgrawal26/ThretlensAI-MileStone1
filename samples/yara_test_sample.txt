@@ -1,0 +1,8 @@
+ThreatLens AI YARA demonstration sample.
+These are harmless strings used only to demonstrate static rule matching:
+powershell
+-downloadstring
+invoke-expression
+rundll32.exe
+schtasks
+https://example.test/demo

@@ -1,0 +1,2 @@
+ThreatLens AI clean demonstration sample.
+This file contains ordinary harmless text and is intended for local testing.
